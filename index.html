@@ -6,10 +6,40 @@
   <title>Search Bar</title>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="./script/main.js"></script>
-  <link rel="stylesheet" href="/src/sassUtilities.css">
+  <!-- <link rel="stylesheet" href="/src/sassUtilities.css"> -->
 
 </head>
-<body>
+<style>
+  #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+  </style>
+
+<!-- <body>
   <input type="search">
-</body>
+</body> -->
+
+<body>
+  <br /><br />
+  <div class="container" style="width:900px;">
+   <h2 align="center">JSON Live Data Search using Ajax JQuery</h2>
+   <h3 align="center">Employee Data</h3>   
+   <br /><br />
+   <div align="center">
+    <input type="text" name="search" id="search" placeholder="Search Employee Details" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
+  </div>
+ </body>
 </html>
